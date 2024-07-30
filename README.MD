@@ -1,10 +1,11 @@
 ## Project SetUP
 
 - clone the project on your local
-- Execute 'npm install' on the same path as of your root directort of the downloaded project
-- Create a '.env' file in the root directory and add the environment variable which is in 'sampleenv.text'.
-- Inside the 'src/config' folder create a new file 'config.json' and the add the following piece of json
-- ...
+- Execute `npm install` on the same path as of your root directort of the downloaded project
+- Create a `.env` file in the root directory and add the environment variable which is in 'sampleenv.text'.
+- Inside the `src/config` folder create a new file `config.json` and the add the following piece of json
+
+```
   {
   "development": {
   "username": <YOUR_DB_USERNAME>,
@@ -15,7 +16,7 @@
   }
   }
 
-...
+```
 
 - Once you've added your db config as listed above , go to the src folder from tour terminal and
   execute 'npx sequelize db:create'.
