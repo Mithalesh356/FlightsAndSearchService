@@ -1,3 +1,22 @@
+## Project SetUP
+
+- clone the project on your local
+- Execute 'npm install' on the same path as of your root directort of the downloaded project
+- Create a '.env' file in the root directory and add the environment variable which is in 'sampleenv.text'.
+- Inside the 'src/config' folder create a new file 'config.json' and the add the following piece of json
+  ...
+  {
+  "development": {
+  "username": <YOUR_DB_USERNAME>,
+  "password": <YOUR_DB_PASSWORD>,
+  "database": "Flights_Search_DB_Dev",
+  "host": "127.0.0.1",
+  "dialect": "mysql"
+  }
+  }
+
+...
+
 # Folder Structure
 
 - src/
