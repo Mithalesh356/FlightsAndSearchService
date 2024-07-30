@@ -4,7 +4,11 @@
 - Execute 'npm install' on the same path as of your root directort of the downloaded project
 - Create a '.env' file in the root directory and add the environment variable which is in 'sampleenv.text'.
 - Inside the 'src/config' folder create a new file 'config.json' and the add the following piece of json
+<<<<<<< HEAD
 - ...
+=======
+  ...
+>>>>>>> 88e8bbbb7bd7ae8f4de75a07243307cffbf50349
   {
   "development": {
   "username": <YOUR_DB_USERNAME>,
