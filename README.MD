@@ -19,7 +19,7 @@
 ```
 
 - Once you've added your db config as listed above , go to the src folder from tour terminal and
-  execute 'npx sequelize db:create'.
+  execute `npx sequelize db:create`.
 
 # Folder Structure
 
@@ -46,3 +46,37 @@
 - initilize sequelize by (npx sequelize init) command.
 - bring models,migrations,seeders folder and config.json in config folder in src from outside.
 - keep config.json in gitignore because it has database password.
+- Design database structure
+
+  ```
+  Airplane Table
+      id
+      model_number
+      capacity
+
+  Flights Table
+      id
+      departure_city_id
+      destination_city_id
+      airplane_id
+      departure
+      arrival
+      Flight_number
+      Airpoty_id
+
+  Airport
+      id
+      name
+      ciry_id
+      address
+
+   City
+      id
+      name
+
+  Note:-   ->:-Means 1 to M  and <-:-Means M to 1
+  Note:-  Airplane -> Flights   Airport <- City  Flights -> Airport
+  ```
+
+- Created City table using `npx sequelize model:generate --name City --attributes name:String` Command.
+- Now run migrations using `npx sequelize db:migrate ` Command.
