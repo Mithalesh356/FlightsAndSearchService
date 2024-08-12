@@ -48,7 +48,7 @@
 - keep config.json in gitignore because it has database password.
 - Design database structure
 
-  ```
+```
   Airplane Table
       id
       model_number
@@ -76,7 +76,7 @@
 
   Note:-   ->:-Means 1 to M  and <-:-Means M to 1
   Note:-  Airplane -> Flights   Airport <- City  Flights -> Airport
-  ```
+```
 
 - Created City table using `npx sequelize model:generate --name City --attributes name:String` Command.
 - Now run migrations using `npx sequelize db:migrate ` Command.
